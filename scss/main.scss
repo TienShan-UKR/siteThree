@@ -1,0 +1,316 @@
+$color1: #ffde59;
+$color2: #12161f;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+@mixin title {
+  font-size: 40px;
+  color: white;
+  font-family: $Oswald;
+}
+
+.main__new-title {
+  @include title;
+}
+
+.main__new {
+  padding: 15px 10px 10px 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.films__batman {
+  position: relative;
+  margin-top: 10px;
+  border-radius: 50px;
+  width: 30%;
+  height: 500px;
+  background-image: url(../images/batman.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.films__container {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.films__batman-title {
+  display: flex;
+  margin: 0 auto;
+  font-size: 28px;
+  font-family: $Oswald;
+  color: white;
+}
+
+.films__batman-title-img {
+  margin: 2px 0px 0px 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.films__batman-age {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  font-family: $Rubik;
+  background-color: $color2;
+  border: 1px solid white;
+  border-radius: 40px;
+  left: 80%;
+  top: 88%;
+}
+
+.films__batman-items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 34%;
+  top: 70px;
+  color: white;
+  font-family: $Roboto;
+  font-size: 18px;
+  width: 100%;
+}
+
+.films__batman-text {
+  display: flex;
+  color: rgba(128, 128, 128, 0.637);
+}
+
+.films__batman-text-country {
+  position: absolute;
+  left: 18%;
+  color: white;
+}
+
+.films__batman-text-year {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  color: white;
+}
+
+.films__batman-text-type {
+  position: absolute;
+  left: 18%;
+  width: 45%;
+  color: white;
+}
+
+.films__batman-text-about {
+  @extend .films__batman-text;
+  text-align: justify;
+}
+
+.films__batman-text-about--active {
+  position: absolute;
+  left: 18%;
+  width: 40%;
+  font-size: 15px;
+  color: white;
+}
+
+.films__batman-text-producer {
+  position: absolute;
+  left: 18%;
+  width: 20%;
+  color: white;
+}
+
+.films__batman-text-trailer {
+  position: absolute;
+  left: 0;
+  top: 400px;
+  transition: 0.5s;
+  &:hover {
+    color: $color1;
+  }
+}
+
+.films__batman-text-buy {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 47%;
+  width: 150px;
+  height: 50px;
+  top: 380px;
+  padding: 0px 10px 0px 10px;
+  background-color: $color1;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: $color2;
+  font-size: 20px;
+  transition: 0.5s;
+  &:hover {
+    color: white;
+  }
+}
+
+.films__batman-img {
+  position: absolute;
+  left: 165px;
+  top: 398px;
+  width: 30px;
+  height: 30px;
+}
+
+.films-second {
+  display: none;
+}
+
+.films__ono {
+  @extend .films__batman;
+  background-image: url(../images/ono.jpg);
+}
+
+.films__ono-age {
+  @extend .films__batman-age;
+  color: red;
+}
+
+.look-now__title {
+  @include title;
+}
+
+.look-now__container {
+  position: relative;
+  padding: 25px 10px 10px 40px;
+}
+
+.look-now__slider {
+  margin: 15px 5.7% 10px 50px;
+  overflow: hidden;
+}
+
+.look-now__slider-container {
+  display: flex;
+  min-width: 200%;
+  transition: 0.5s;
+  transform: translate(-750px);
+}
+
+.look-now__slider-item--slider4 {
+  height: 500px;
+  transition: 0.3s;
+  border-radius: 25px;
+  background-image: url(../images/slider4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.look-now__slider-item--slider1 {
+  @extend .look-now__slider-item--slider4;
+  background-image: url(../images/slider1.jpg);
+}
+
+.look-now__slider-item--slider2 {
+  @extend .look-now__slider-item--slider4;
+  background-image: url(../images/slider2.jpg);
+}
+
+.look-now__slider-item--slider3 {
+  @extend .look-now__slider-item--slider4;
+  background-image: url(../images/slider3.jpg);
+}
+
+.look-now__slider-item--slider5 {
+  @extend .look-now__slider-item--slider4;
+  background-image: url(../images/slider5.jpg);
+}
+
+.look-now__slider-item--slider6 {
+  @extend .look-now__slider-item--slider4;
+  background-image: url(../images/slider6.jpg);
+}
+
+.look-now__slider-item--slider7 {
+  @extend .look-now__slider-item--slider4;
+  margin-right: 0;
+  background-image: url(../images/slider7.jpg);
+}
+
+.look-now__slider-arrows-left {
+  position: absolute;
+  left: 2%;
+  top: 55%;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/arrow-left-white-slider.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-image: url(../images/leftHover-slider.png);
+  }
+}
+
+
+.look-now__slider-arrows-right {
+  position: absolute;
+  right: 1.5%;
+  top: 55%;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/arrow-right-white-slider.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-image: url(../images/rightHover-slider.png);
+  }
+}
+
+.look-now__slider-about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.look-now__slider-btn {
+  width: 150px;
+  margin-bottom: 15px;
+  height: 30px;
+  cursor: pointer;
+  outline: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: 15px;
+  background-color: $color1;
+  border-radius: 15px;
+  border: none;
+  font-family: $Rubik;
+  color: $color2;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  position: relative;
+  &:hover {
+    color: $color1;
+    background-color: $color2;
+    border: 1px solid $color1;
+    transform: scale(120%);
+  }
+}
+

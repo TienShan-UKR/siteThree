@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="black"></div>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__menu-items">
+                    <div class="header__menu-schedule">
+                        <div class="header__text-schedule"><a class='header__menu-link'
+                                href="schedule.html">Расписание</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-films">
+                        <div class="header__text-films"><a class='header__menu-link' href="index.html">Фильмы</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-share">
+                        <div class="header__text-share"><a class='header__menu-link' href="index.html">Акции и
+                                скидки</a></div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class=""><img src="images/logo.png" alt="" class="logo__header"></a>
+                    </div>
+                    <div class="header__entrance">
+                        <img class='header__entrance-img' src="images/user.png" alt="">
+                        <div class="header__entrance-text">
+                            Личный кабинет
+                        </div>
+                        <div class="header__entrance-text2">
+                            Вход
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <div class="header__burger-img"></div>
+                        <!--TODO: Меню бургера-->
+                        <div class="header__burger-window">
+                            <div class="menu-window">
+                                <a class="menu-window__item menu-window__item-schedule" href="">Расписание</a>
+                                <a class="menu-window__item menu-window__item-films" href="">Фильмы</a>
+                                <a class="menu-window__item menu-window__item-prices" href="">Цены</a>
+                                <a class="menu-window__item menu-window__item-contacts" href="">Контакты</a>
+                                <a class="menu-window__item menu-window__item-about-us" href="">Про нас</a>
+                                <a class="menu-window__item menu-window__item-share" href="">Акции</a>
+                                <span class="menu-window__text">Хотите уточнить информацию?</span>
+                                <input type="tel" name="Телефон" class="menu-window__input"
+                                    placeholder="+38 (___)___-__-__">
+                                <button class="menu-window__call-me">Позвонить мне</button>
+                                <div class="menu-window__social">
+                                    <img class='menu-window__item-social' src="images/instagram.png" alt="">
+                                    <img class='menu-window__item-social' src="images/viber.png" alt="">
+                                    <img class='menu-window__item-social menu-window__item-social--active'
+                                        src="images/facebook.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__middle">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__left-arrow"></div>
+                        <div class="slider__container">
+                            <div class="slider__first">
+                                <div class="slider__first-black"></div>
+                                <div class="slider__text-buy-first">
+                                    <a href="" class="slider__text-buy-link">Купить билет</a>
+                                </div>
+                                <div class="slider__text-age">
+                                    16+
+                                </div>
+                                <div class="slider__first-text">
+                                    <img src="images/play.png" alt="" class="slider__second-play">
+                                    <a href="https://www.youtube.com/watch?v=YLw55x-zOSo"
+                                        class="slider__text-link">Смотреть трейлер</a>
+                                </div>
+                            </div>
+                            <div class="slider__second">
+                                <div class="slider__second-black"></div>
+                                <div class="slider__text-buy-second">
+                                    <a href="" class="slider__text-buy-link">Купить билет</a>
+                                </div>
+                                <div class="slider__text-age">
+                                    16+
+                                </div>
+                                <div class="slider__second-text">
+                                    <img src="images/play.png" alt="" class="slider__second-play">
+                                    <a href="https://www.youtube.com/watch?v=N9HNrpH2uTE"
+                                        class="slider__text-link">Смотреть трейлер</a>
+                                </div>
+                            </div>
+                            <div class="slider_third">
+                                <div class="slider__third-black"></div>
+                                <div class="slider__text-buy-third">
+                                    <a href="" class="slider__text-buy-link">Купить билет</a>
+                                </div>
+                                <div class="slider__text-age">
+                                    16+
+                                </div>
+                                <div class="slider__third-text">
+                                    <img src="images/play.png" alt="" class="slider__second-play">
+                                    <a href="https://www.youtube.com/watch?v=3B0Hjirk6Gs"
+                                        class="slider__text-link">Смотреть трейлер</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__right-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="main__new">
+                <div class="main__new-title">Премьеры</div>
+                <div class="line"></div>
+                <!--TODO: Первый фильм-->
+                <div class="films-first">
+                    <div class="films__container">
+                        <div class="films__batman">
+                            <div class="films__batman-age">
+                                16+
+                            </div>
+                        </div>
+                        <div class="films__batman-title">БЭТМЕН vs СУПЕРМЕНА <img class='films__batman-title-img'
+                                src="images/new.png" alt="">
+                        </div>
+                        <div class="films__batman-items">
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Год производства:
+                                    <div class="films__batman-text-year">2021</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Страна:
+                                    <div class="films__batman-text-country">США</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Жанр:
+                                    <div class="films__batman-text-type">
+                                        фантастика, боевик, фэнтези, приключения</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Режиссер:
+                                    <div class="films__batman-text-producer">
+                                        Зак Снайдер</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text-about">Описание:
+                                    <div class="films__batman-text-about--active">
+                                        Опасаясь, что действия богоподобного супергероя так и останутся бесконтрольными,
+                                        грозный и могущественный страж Готэм Сити бросает вызов самому почитаемому в
+                                        наши дни спасителю Метрополиса, в то время как весь остальной мир решает, какой
+                                        герой
+                                        ему по-настоящему нужен. И пока Бэтмен и Супермен пребывают в состоянии войны
+                                        друг с
+                                        другом, возникает новая угроза, которая ставит человечество под самую большую
+                                        опасность, с которой оно когда-либо сталкивалось.</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <a class="films__batman-text-trailer"
+                                    href="https://www.youtube.com/watch?v=EkvKHhLq3NY">Смотреть трейлер</a>
+                                <img class="films__batman-img" src="images/youtube.png" alt="">
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text-buy">Купить билет</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lookMore">
+                        <div class="lookMore__arrow1"></div>Посмотреть все<div class="lookMore__arrow2"></div>
+                    </div>
+                </div>
+                <div class="line3"></div>
+                <!--TODO: Второй фильм-->
+                <div class="films-second">
+                    <div class="films__container">
+                        <div class="films__ono">
+                            <div class="films__ono-age">
+                                18+
+                            </div>
+                        </div>
+                        <div class="films__batman-title">ОНО 2 <img class='films__batman-title-img' src="images/new.png"
+                                alt="">
+                        </div>
+                        <div class="films__batman-items">
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Год производства:
+                                    <div class="films__batman-text-year">2019</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Страна:
+                                    <div class="films__batman-text-country">США</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Жанр:
+                                    <div class="films__batman-text-type">
+                                        ужасы, триллер</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text">Режиссер:
+                                    <div class="films__batman-text-producer">
+                                        Андрес Мускетти</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text-about">Описание:
+                                    <div class="films__batman-text-about--active">
+                                        Проходит 27 лет после первой встречи ребят с демоническим Пеннивайзом. Они
+                                        выросли, покинули родной городок и практически забыли о тех страшных событиях,
+                                        но неожиданно в их взрослые проблемы вторгается телефонный звонок. Майк никогда
+                                        не покидал Дерри и всё это время собирал информацию о жутком клоуне и ждал.
+                                        Когда в городе начали происходить новые убийства, Майк просит старых друзей
+                                        вновь собраться вместе и разобраться со злом города Дерри раз и навсегда.</div>
+                                </div>
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <a class="films__batman-text-trailer"
+                                    href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть трейлер</a>
+                                <img class="films__batman-img" src="images/youtube.png" alt="">
+                            </div>
+                            <div class="films__batman-text-flex">
+                                <div class="films__batman-text-buy">Купить билет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Слайдер-->
+            <div class="look-now">
+                <div class="look-now__container">
+                    <div class="look-now__title">Фильмы в прокате<div class="test"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="look-now__slider">
+                        <div class="look-now__slider-arrows">
+                            <div class="look-now__slider-arrows-left"></div>
+                            <div class="look-now__slider-arrows-right"></div>
+                        </div>
+                        <div class="look-now__slider-container">
+                            <div class="look-now__slider-item look-now__slider-item--slider1">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="first" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider2">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="second" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider3">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="third" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider4">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="fourth" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider5">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="fifth" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider6">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="sixth" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="look-now__slider-item look-now__slider-item--slider7">
+                                <div class="look-now__slider-about">
+                                    <div class="look-now__slider-btn" data-path="seventh" data-animation="fade"
+                                        data-speed="300">
+                                        Подробнее
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------------------------TODO: Модальные окна-------------------------------------------------------------------->
+        <div class="modal">
+            <!--TODO:: Окно первого фильма-->
+            <div class="modal__container" data-target="first">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Гарри Потер и Дары смерти:</div>
+                        <div class="modal-content__title modal-content__title--active">Часть 1</div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2010</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">Великобритания, США</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">фэнтези, приключения</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Дэвид Йейтс</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">16+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">146 мин. / 02:26</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Гарри Поттера ждёт самое страшное испытание в жизни — смертельная схватка с Волан-де-Мортом.
+                        Ждать помощи не от кого — Гарри одинок, как никогда… Друзья и враги Гарри предстают в
+                        совершенно неожиданном свете. Граница между Добром и Злом становится всё призрачнее…
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">7.840</div>
+                        </div>
+                        <a class= "link" href="schedule.html#harry_time"><div class="look-schedule">Смотреть расписание</div></a>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно второго фильма-->
+            <div class="modal__container" data-target="second">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Области тьмы</div>
+                        <div class="modal-content__title modal-content__title--active"></div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2011</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США, Мексика</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">триллер, драма, фантастика</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Нил Бёргер</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">16+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">105 мин. / 01:45</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Нью-йоркский писатель Эдди, желая преодолеть чёрную полосу в жизни, принимает засекреченный
+                        препарат под названием NZT. Таблетка выводит мозг парня на работу в нереальной мощности. Этот
+                        творческий наркотик меняет всю жизнь Эдди, за короткий срок он зарабатывает кучу денег, но скоро
+                        начинает страдать от зловещих побочных эффектов препарата...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">7.981</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно третьего фильма-->
+            <div class="modal__container" data-target="third">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Матрица:</div>
+                        <div class="modal-content__title modal-content__title--active">Перезагрузка</div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2003</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">фантастика, боевик</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Лана Вачовски, Лилли Вачовски</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">16+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">138 мин. / 02:18</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Борцы за свободу Нео, Тринити и Морфеус продолжают руководить восстанием людей против Армии
+                        Машин. Для уничтожения системы репрессий и эксплуатации они вынуждены прибегнуть не только к
+                        арсеналу превосходного оружия, но и к своим выдающимся навыкам...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">8.001</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно четвертого фильма-->
+            <div class="modal__container" data-target="fourth">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Веном</div>
+                        <div class="modal-content__title modal-content__title--active"></div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2018</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США, Китай</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">фантастика, боевик, триллер, ужасы</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Рубен Фляйшер</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">16+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">112 мин. / 01:52</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Что, если в один прекрасный день в тебя вселится симбиот, который наделит тебя
+                        сверхчеловеческими способностями? Вот только Веном — симбиот совсем недобрый, и договориться с
+                        ним невозможно. А нужно ли договариваться? Ведь в какой-то момент ты понимаешь, что быть плохим
+                        вовсе не так уж и плохо, так даже веселее...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">7.981</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно пятого фильма-->
+            <div class="modal__container" data-target="fifth">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Тихое место</div>
+                        <div class="modal-content__title modal-content__title--active"></div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2020</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">ужасы, фантастика, драма</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Джон Красински</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">16+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">97 мин. / 01:37</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        474 дня прошло после нападения на Землю охотящихся на звук существ, семья Эбботт продолжает
+                        бороться за жизнь в полной тишине. Столкнувшись со смертельной угрозой в собственном доме, они
+                        вынуждены отправиться во внешний мир, где находят убежище и старого знакомого семьи...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">6.669</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно шестого фильма-->
+            <div class="modal__container" data-target="sixth">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Годзилла против Конга</div>
+                        <div class="modal-content__title modal-content__title--active"></div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2021</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США, Австралия, Канада, Индия</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">боевик, фантастика</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Адам Вингард</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">12+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">113 мин. / 01:53</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Конг и группа ученых отправляются в опасное путешествие в поисках родного дома гиганта. Среди
+                        них девочка Джия, единственная, кто умеет общаться с Конгом. Неожиданно они сталкиваются с
+                        разъяренным Годзиллой, разрушающим все на своем пути...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">6.593</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+            <!--TODO: Окно седьмого фильма-->
+            <div class="modal__container" data-target="seventh">
+                <div class="modal-content1">
+                    <button class="modal-close">Закрыть</button>
+                    <div class="modal-content__container">
+                        <div class="modal-content__title">Человек-Паук 3:</div>
+                        <div class="modal-content__title modal-content__title--active">Враг в отражении</div>
+                    </div>
+                    <div class="modal-content__text">Год производства:
+                        <div class="modal-content__info">2021</div>
+                    </div>
+                    <div class="modal-content__text">Страна:
+                        <div class="modal-content__info">США</div>
+                    </div>
+                    <div class="modal-content__text">Жанр:
+                        <div class="modal-content__info">фантастика, боевик, приключения</div>
+                    </div>
+                    <div class="modal-content__text">Режиссер:
+                        <div class="modal-content__info">Сэм Рэйми</div>
+                    </div>
+                    <div class="modal-content__text">Возраст:
+                        <div class="modal-content__info">12+</div>
+                    </div>
+                    <div class="modal-content__text">Время:
+                        <div class="modal-content__info">139 мин. / 02:19</div>
+                    </div>
+                    <div class="modal-content__text">Описание:</div>
+                    <div class="modal-content__info modal-content__info--active">
+                        Конг и группа ученых отправляются в опасное путешествие в поисках родного дома гиганта. Среди
+                        них девочка Джия, единственная, кто умеет общаться с Конгом. Неожиданно они сталкиваются с
+                        разъяренным Годзиллой, разрушающим все на своем пути...
+                    </div>
+                    <div class="modal-flex">
+                        <div class="look-trailer">
+                            <a class="look-trailer__link" href="https://www.youtube.com/watch?v=RxLmsi98DB4">Смотреть
+                                трейлер</a>
+                            <img class="look-trailer__img" src="images/youtube.png" alt="">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-text">Рейтинг фильма на Kinopoisk:</div>
+                            <div class="rating-value">7.295</div>
+                        </div>
+                        <div class="look-schedule">Смотреть расписание</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.min.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="black"></div>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__menu-items">
+                    <div class="header__menu-schedule">
+                        <div class="header__text-schedule"><a class='header__menu-link'
+                                href="schedule.html">Расписание</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-films">
+                        <div class="header__text-films"><a class='header__menu-link' href="index.html">Фильмы</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-share">
+                        <div class="header__text-share"><a class='header__menu-link' href="index.html">Акции и
+                                скидки</a></div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class=""><img src="images/logo.png" alt="" class="logo__header"></a>
+                    </div>
+                    <div class="header__entrance">
+                        <img class='header__entrance-img' src="images/user.png" alt="">
+                        <div class="header__entrance-text">
+                            Личный кабинет
+                        </div>
+                        <div class="header__entrance-text2">
+                            Вход
+                        </div>
+                    </div>
+                    <div class="header__burger">
+                        <div class="header__burger-img"></div>
+                        <!--TODO: Меню бургера-->
+                        <div class="header__burger-window">
+                            <div class="menu-window">
+                                <a class="menu-window__item menu-window__item-schedule" href="">Расписание</a>
+                                <a class="menu-window__item menu-window__item-films" href="">Фильмы</a>
+                                <a class="menu-window__item menu-window__item-prices" href="">Цены</a>
+                                <a class="menu-window__item menu-window__item-contacts" href="">Контакты</a>
+                                <a class="menu-window__item menu-window__item-about-us" href="">Про нас</a>
+                                <a class="menu-window__item menu-window__item-share" href="">Акции</a>
+                                <span class="menu-window__text">Хотите уточнить информацию?</span>
+                                <input type="tel" name="Телефон" class="menu-window__input"
+                                    placeholder="+38 (___)___-__-__">
+                                <button class="menu-window__call-me">Позвонить мне</button>
+                                <div class="menu-window__social">
+                                    <img class='menu-window__item-social' src="images/instagram.png" alt="">
+                                    <img class='menu-window__item-social' src="images/viber.png" alt="">
+                                    <img class='menu-window__item-social menu-window__item-social--active'
+                                        src="images/facebook.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="schedule__container">
+            <div class="schedule__title">Расписание фильмов</div>
+            <div class="schedule__select">Выберите дату<div class="schedule__select-img"></div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule-days">
+                <div class="schedule-days__container">
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                    <div class="schedule-days__item schedule-days__item--active">
+                        <div class="schedule-days__month-and-number"></div>
+                        <div class="schedule-days__day"></div>
+                    </div>
+                </div>
+            </div>
+            <a name="harry_time"></a>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img1"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Гарри Потер и Дары смерти: часть 1</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">13:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">14:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">15:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">16:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">17:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">18:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">19:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img2"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Области тьмы</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">13:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">14:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">15:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">16:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img3"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Матрица: Перезагрузка</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img4"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Веном</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">13:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">14:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">15:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img5"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Тихое место</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">13:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">14:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">15:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">16:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">17:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img6"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Годзилла против Конга</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">13:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">14:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">15:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">16:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">17:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">18:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">19:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-schedule"></div>
+            <div class="schedule__film-container">
+                <div class="schedule__film-img7"></div>
+                <div class="schedule__film-timetable">
+                    <div class="schedule__film-timetable-title">Человек-Паук 3: Враг в отражении</div>
+                    <div class="schedule__film-timetable-title">Сеансы</div>
+                    <div class="schedule__film-timetable-time">
+                        <div class="schedule__film-timetable-time-item">10:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">11:30<div class="price">150 грн</div>
+                        </div>
+                        <div class="schedule__film-timetable-time-item">12:30<div class="price">150 грн</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/schedule.js"></script>
+</body>

@@ -1,0 +1,139 @@
+$color1: #ffde59;
+$color2: #12161f;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+
+body {
+  background-color: $color2;
+  position: relative;
+}
+
+.black {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.line {
+  width: 97%;
+  height: 0px;
+  border-bottom: 2px solid $color1;
+  padding: 5px 0px 0px 0px;
+}
+
+.line3 {
+  @extend .line;
+  padding: 15px 0px 0px 0px;
+  display: none;
+}
+
+.lookMore {
+  position: relative;
+  cursor: pointer;
+  font-family: $Rubik;
+  font-size: 18px;
+  width: 230px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 40%;
+  color: $color1;
+  background-color: $color2;
+  border-radius: 20px;
+  border: 1px solid $color1;
+  transition: 0.5s;
+  &:hover {
+    color: white;
+    border: 1px solid white;
+  }
+  &:hover .lookMore__arrow1 {
+    transform: rotate(0deg);
+  }
+  &:hover .lookMore__arrow2 {
+    transform: rotate(0deg);
+  }
+}
+
+.lookMore__arrow1 {
+  background-image: url(../images/lookMore.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.lookMore__arrow2 {
+  background-image: url(../images/lookMore.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  transform: rotate(-180deg);
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.look-trailer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.look-trailer__link {
+  display: block;
+  position: relative;
+  left: 20px;
+  font-family: $Rubik;
+	font-size: 18px;
+  transition: .5s;
+  &:hover {
+    color: $color1;
+  }
+}
+
+.look-trailer__img {
+  position: relative;
+  left: 30px;
+  width: 35px;
+  height: 35px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  left: 6%;
+}
+
+.rating-text {
+  font-family: $Rubik;
+	font-size: 18px;
+  color: white;
+}
+
+.rating-value {
+  font-family: $Rubik;
+	font-size: 20px;
+  color: green;
+  position: relative;
+  top: -2px;
+  left: 7px;
+}
+
+.modal-flex {
+  display: flex;
+}

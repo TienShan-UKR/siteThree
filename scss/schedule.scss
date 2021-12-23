@@ -1,0 +1,189 @@
+$color1: #ffde59;
+$color2: #12161f;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+@mixin title {
+  font-size: 40px;
+  color: white;
+  font-family: $Oswald;
+}
+
+.schedule__container {
+  position: relative;
+  width: 100%;
+  padding: 15px 40px 10px 40px;
+}
+
+.schedule__title {
+  @include title;
+  width: 100%;
+  text-align: center;
+}
+
+.line-schedule {
+  margin-top: 10px;
+  width: 100%;
+  height: 0px;
+  border-bottom: 2px solid $color1;
+  padding: 5px 0px 0px 0px;
+}
+
+.schedule__select {
+  font-size: 15px;
+  font-family: $Roboto;
+  color: $color1;
+  position: absolute;
+  background-color: $color2;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 79px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.schedule__select-img {
+  background-image: url(../images/tap.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 35px;
+  position: absolute;
+  right: -45px;
+  top: -5px;
+  background-color: $color2;
+}
+
+.schedule-days__container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.schedule-days__item {
+  width: 100%;
+  margin-right: 5px;
+  height: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.493);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  &:hover {
+    border: 1px solid white;
+    cursor: pointer;
+  }
+}
+
+.schedule-days__item--active {
+  margin-right: 0px;
+}
+
+.schedule-days__day {
+  color: white;
+  font-size: 15px;
+  font-family: $Rubik;
+}
+
+.schedule-days__month-and-number {
+  @extend .schedule-days__day;
+  font-size: 20px;
+}
+
+.schedule__film-container {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.schedule__film-img1 {
+  width: 250px;
+  height: 300px;
+  background-image: url(../images/slider1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.schedule__film-img2 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider2.jpg);
+}
+
+.schedule__film-img3 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider3.jpg);
+}
+
+.schedule__film-img4 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider4.jpg);
+}
+
+.schedule__film-img5 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider5.jpg);
+}
+
+.schedule__film-img6 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider6.jpg);
+}
+
+.schedule__film-img7 {
+  @extend .schedule__film-img1;
+  background-image: url(../images/slider7.jpg);
+}
+
+.schedule__film-timetable {
+  width: 100%;
+}
+
+.schedule__film-timetable-title {
+  text-align: center;
+  font-size: 27px;
+  font-family: $Oswald;
+  color: $color1;
+  width: 100%;
+}
+
+.schedule__film-timetable-time {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 10px 0px 10px;
+  width: 100%;
+}
+
+.schedule__film-timetable-time-item {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color2;
+  background-color: $color1;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid $color2;
+  transition: 0.5s;
+  margin-left: 15px;
+  margin-top: 10px;
+  user-select: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $color2;
+    border: 1px solid $color1;
+    color: $color1;
+  }
+}
+
+.schedule__film-timetable-title-img {
+  background-color: $color2;
+  border: 1px solid $color1;
+}
